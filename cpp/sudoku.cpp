@@ -39,7 +39,6 @@ bool isValidCol(int board[][9], int cellVal, int cellRow, int cellCol){
 
 int solve(int board[][9], int row, int col){
 	if (board[row][col] != 0){
-		int nextCell;
 		if (col < 8 && solve(board, row, col + 1) == 0){
 			return 0;
 		}
